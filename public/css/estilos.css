@@ -1,0 +1,286 @@
+body{
+    background: #EEEEEE;
+    margin: 0px;
+    overscroll-behavior: contain;
+}
+
+.mejoresPuntajes{
+    float: left;
+    min-height: 82%;
+    width: 25%;
+    margin-left: 2%;
+    font-size: 100%;
+    padding: 0%;
+    background: #0277BD;
+    height: unset;
+}
+
+.formulario{
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    width: 90%;
+}
+#txt_nombre{
+    border: none;
+    border-bottom: 2px solid #01579B;
+    background: #EEEEEE;
+    width: 25%;
+    padding: 10px 13px;
+    font-size: 90%;
+}
+#bt_multijugador {
+    background-color: #01579B; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    float: right;
+}
+#bt_multijugador:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.mejoresPuntajesCabezera{
+    margin-top: 0%;
+    height: 8%;
+    background: #01579B;
+}
+.mejoresPuntajesCabezera:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tableroPrincipal{
+    float: left;
+    width: 70%;
+    margin-left: 1%;
+    height: 80%;
+    padding-bottom: 1%;
+    position: relative;
+    z-index: 50;
+    background: #0277BD;
+}
+
+.juegoFinalizado{
+    display: none;
+    z-index: 100;
+    position: absolute;
+    height: 50%;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    background: #d32f2fcc;
+    border-color: #b71c1c9c;
+    border-style: solid;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.24), 0 30px 70px 0 rgba(0,0,0,0.19);
+}
+#lbFinalizado{
+    font-size: 250%;
+    margin: 0%;
+    color: #e1f5fe;
+    text-align: center;
+    padding-bottom: 4%;
+}
+#lbPuntaje,#lbMaximo{
+    font-size: 150%;
+    margin: 0%;
+    color: #e1f5fe;  
+    margin-left: 15%;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+#btReiniciar{
+    background-color: #b71c1c; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin-top: 8%;
+    margin-left: 15%;
+    width: 70%;
+    font-weight: bold;
+}
+#btReiniciar:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.pos{
+    position:relative;
+    float: left;
+    margin: .5%;
+    width: 24%;
+    height: 23%;
+    color: white;
+    font-size: 350%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+
+    background: #4FC3F7;
+}
+
+.puntaje{
+    height: 7%;
+
+    background: #01579B;   
+}
+.puntos{
+    float: left;
+    width: 45%; 
+}
+.maximo{
+    float: left; 
+    width: 45%;  
+}
+.tablero{
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 90%;
+    height: 90%;
+
+    background: #01579B;
+}
+
+h3{
+    margin: 1%;
+    font-size: 130%;
+    color: white;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #01579B;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 0%;
+    padding-top: 2%;    
+}
+img{
+    float: left;
+    margin: 1%;
+}
+#tabla_mejoresPuntajes{
+    color:white;
+    width: 100%;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+
+@media all and (min-width:200px) and (max-width: 1000px) {
+    .tableroPrincipal 
+    {
+        width: 90%;
+        margin-left: 5%;
+        height: 75%;
+    }
+    .pos{
+        font-size: 200%;
+    }
+    .mejoresPuntajes{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        min-height: 8%;
+        height: 8%;
+    }
+    .mejoresPuntajesCabezera{
+        padding-top: 0%;
+        height: 100%;
+    }
+    #tabla_mejoresPuntajes{
+        display: none;
+    }
+    #bt_multijugador {
+        padding: 10px 20px;
+    }
+    h2,h3{
+        font-size: 110%;
+    }
+    #txt_nombre{
+        width: 50%;
+    }
+    h1{
+        font-size: 150%;
+    }
+    #lbFinalizado{
+        font-size: 200%;
+        margin: 0%;
+        color: #e1f5fe;
+        text-align: center;
+    }
+    #lbPuntaje,#lbMaximo{
+        font-size: 100%;
+        margin: 0%;
+        color: #e1f5fe;  
+        margin-left: 15%;
+    }
+}
+
+.n2{
+    background: #eceff1;
+    color: #37474f;
+}
+.n4{
+    background: #90a4ae;
+    color: #37474f;
+}
+.n8{
+    background: #ffcc80;
+    color: #37474f;
+}
+.n16{
+    background: #ffca28;
+    color: #37474f;
+}
+.n32{
+    background: #72624f;
+}
+.n64{
+    background: #e65100;
+}
+.n128{
+    background: #ffab40;
+}
+.n256{
+    background: #ef6c00;
+}
+.n512{
+    background: #e65100;
+}
+.n1024{
+    background: #ff9800;
+    
+}
+.n2048{
+    background: rgb(241, 193, 34);
+}
+.n4096{
+    background: #607d8b;
+}
+.n8192{
+    background: #8bc34a;
+}
+.n16384{
+    background: #5e35b1;
+}
+.n32768{
+    background: #303f9f;
+}
+.n65536{
+    background: #aa00ff;
+}

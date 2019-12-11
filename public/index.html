@@ -1,0 +1,76 @@
+<html>
+    <head>
+            <meta charset="utf-8" content="text/html">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <meta name="HandheldFriendly" content="true" />
+            <title>2048</title>
+            <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+            <link rel="icon" type="image/png" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1>2048</h1>
+            <form class="formulario">
+                <input id="txt_nombre" type="text" placeholder="Nombre"/>
+                <input id="bt_multijugador" type="button" value="Multijugador"/>
+            </form>
+        </header>
+        <section class="main">
+        <div class="tableroPrincipal">
+            <div class="Puntaje">
+                <div class="puntos">
+                    <h3 id="id_puntos">Puntos: </h3>
+                </div>
+                <div class="maximo">
+                    <h3 id="id_maximo">Maximo: </h3>
+                </div>
+            </div>
+            <div class="tablero">
+                <div class="pos" id="pos11"></div>
+                <div class="pos" id="pos21"></div> 
+                <div class="pos" id="pos31"></div>
+                <div class="pos" id="pos41"></div>
+
+                <div class="pos" id="pos12"></div>
+                <div class="pos" id="pos22"></div> 
+                <div class="pos" id="pos32"></div>
+                <div class="pos" id="pos42"></div>
+
+                <div class="pos" id="pos13"></div>
+                <div class="pos" id="pos23"></div> 
+                <div class="pos" id="pos33"></div>
+                <div class="pos" id="pos43"></div>
+
+                <div class="pos" id="pos14"></div>
+                <div class="pos" id="pos24"></div> 
+                <div class="pos" id="pos34"></div>
+                <div class="pos" id="pos44"></div>
+            </div>
+            <div class="juegoFinalizado">
+                <h1 id="lbFinalizado">HAS PERDIDO</h1>
+                <p id="lbPuntaje">Tu Puntaje: </p>
+                <p id="lbMaximo">Tu Maximo: </p>
+                <input id="btReiniciar" type="button" value="Jugar de nuevo">
+            </div>
+        </div>
+        
+        <div class="mejoresPuntajes">
+            <div class="mejoresPuntajesCabezera">
+                <img src="src/menu.png" width="40" height="40">  
+                <h2>Mejores puntajes</h2>
+            </div>
+            <table id="tabla_mejoresPuntajes">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntos</th>
+                    <th>Maximo</th>
+                </tr>
+            </table>
+        </div>
+
+        </section>     
+    <script type="text/javascript" src="scripts/anime-master/lib/anime.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    </body>
+</html>
